@@ -5,7 +5,8 @@ export default function Vistoria() {
         <>
             <h2>Processo de vistoria</h2>
 
-            <p>Olá, seja bem vindo à TechnoBike.</p>
+            <p>Olá, seja bem vindo à TechnoBike. Nosso objetivo é promover uma vistoria de seguro bike com rapidez e 
+                comodidade a você!</p>
 
             <p>Primeira etapa: </p>
             <ul>
