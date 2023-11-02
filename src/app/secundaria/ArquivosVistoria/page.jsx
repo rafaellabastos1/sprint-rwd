@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 export default function ArquivosVistoria() {
 
     const enviarFotos = () =>{
@@ -58,10 +60,10 @@ export default function ArquivosVistoria() {
                 <button type="button" id="enviaVideos" onClick={enviarVideos}>Enviar</button>
             </div>
             
-            <div>
-                <p><Link to='/simulacao/identificarclientes/tipodoseguro/vistoria/validacaodavistoria'>Próxima etapa: </Link> Conferir status de vistoria: </p>
-                <p>Observação: neste momento, como ainda nào aprendemos a abrir a câmera e capturar a imagem, colocamos temporariamente a opção do formulário de pegar a foto da galeria - apenas para simulação.</p>
-            </div>
+            <p>Próxima etapa: </p>
+            <ul>
+                <li><Link href=''>Conferir status da vistoria</Link></li>
+            </ul>
         </>
     )
 }

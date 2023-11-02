@@ -14,7 +14,10 @@ export default function Identificacao() {
             <input type="text" id="ColetarCpf" placeholder="Digite aqui"/>
             <button id="EnviarCPF" onClick={enviarCpf}>Enviar</button> 
 
-            <p><b><Link href=''>Próxima etapa: </Link></b>escolha do tipo do seguro</p>
+            <p>Próxima etapa: </p>
+            <ul>
+                <li><Link href=''>Escolha do tipo do seguro</Link></li>
+            </ul>
         </>
     )
 }
