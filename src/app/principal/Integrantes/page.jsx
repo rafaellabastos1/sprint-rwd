@@ -10,6 +10,9 @@ export default function Integrantes() {
                 <li>Luiz Fillipe Farias - RM: 99519  </li>
                 <li>Rafaella Monique do Carmo - RM: 552425</li>
             </ul>
+
+            <p><b>Link do GitHub: </b>https://github.com/rafaellabastos1/sprint-rwd.git</p>
+            <p><b>Link da Vercel:</b></p>
         </>
     )
 }
