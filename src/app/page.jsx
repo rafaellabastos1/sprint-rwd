@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Page from './principal/Vistoria/page';
 
 export default function Home() {
   return (
@@ -9,7 +10,7 @@ export default function Home() {
     
       <h2>Faça sua vistoria aqui:</h2>
       <ul>
-        <li><Link href=''>Vistoria</Link></li>
+        <li><Link href='/principal/Vistoria'>Vistoria</Link></li>
         <ul>
           <li>Identificação do cliente</li>
           <li>Tipo do Seguro</li>

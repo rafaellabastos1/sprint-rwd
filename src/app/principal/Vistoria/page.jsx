@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Page from '../../secundaria/Identificacao/page';
 
 export default function Vistoria() {
     return (
@@ -10,7 +11,7 @@ export default function Vistoria() {
 
             <p>Primeira etapa: </p>
             <ul>
-                <li><Link href=''>Identificação</Link></li>
+                <li><Link href='/secundaria/Identificacao'>Identificação</Link></li>
             </ul>
         </>
     )
