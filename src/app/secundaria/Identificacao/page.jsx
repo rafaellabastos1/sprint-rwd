@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import Page from './secundaria/TipoSeguro/page';
+import Page from '../TipoSeguro/page';
 
 export default function Identificacao() {
 

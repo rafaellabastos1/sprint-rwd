@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import Page from './secundaria/ArquivosVistoria/page';
+import Page from '../ArquivosVistoria/page';
 
 export default function TipoSeguro() {
 
