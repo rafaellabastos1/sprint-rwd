@@ -1,7 +1,9 @@
 import Link from 'next/link'
 import Page from '../StatusVistoria/page';
+import { useClient } from 'next/client';
 
 export default function ArquivosVistoria() {
+    useClient();
 
     const enviarFotos = () =>{
         alert ("Fotos enviadas com sucesso!")

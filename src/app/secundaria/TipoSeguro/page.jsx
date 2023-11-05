@@ -1,8 +1,8 @@
 import Link from 'next/link'
-import Page from '../ArquivosVistoria/page';
+import Page from '../ArquivosVistoria/page'; 
+import { useClient } from 'next/client';
 
 export default function TipoSeguro() {
-
     const tipoSeguro = (seguro) => {
         if (seguro === 0) {
             alert("Seguro para ciclistas que pedalam na rua selecionado!")
@@ -20,6 +20,8 @@ export default function TipoSeguro() {
             alert("Seguro para ciclistas que viajam com a bike selecionado!")
         }
     } 
+
+    useClient();
 
     return (
         <>
