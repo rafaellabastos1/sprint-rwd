@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import Page from '../ArquivosVistoria/page';
+import Page from '../arquivos-vistoria/page';
 
 export default function TipoSeguro() {
 
@@ -52,7 +52,7 @@ export default function TipoSeguro() {
 
             <p>Próxima etapa: </p>
             <ul>
-                <li><Link href='/secundaria/ArquivosVistoria'>Envio dos arquivos da vistoria</Link></li>
+                <li><Link href='/secundaria/arquivos-vistoria'>Envio dos arquivos da vistoria</Link></li>
             </ul>
         </>
     )

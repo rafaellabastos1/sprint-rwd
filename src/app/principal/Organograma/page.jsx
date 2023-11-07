@@ -1,10 +1,10 @@
 import Link from 'next/link'
 import Page from '../Integrantes/page';
-import Page from '../Vistoria/page';
-import Page from '../../secundaria/Identificacao/page';
-import Page from '../../secundaria/TipoSeguro/page';
-import Page from '../../secundaria/ArquivosVistoria/page';
-import Page from '../../secundaria/StatusVistoria/page';
+import Page from '../vistoria/page';
+import Page from '../../secundaria/identificacao/page';
+import Page from '../../secundaria/tipo-seguro/page';
+import Page from '../../secundaria/arquivos-vistoria/page';
+import Page from '../../secundaria/status-vistoria/page';
 
 export default function Organograma() {
     return (
@@ -14,22 +14,22 @@ export default function Organograma() {
             <p>Segue abaixo o organograma das páginas:</p>
 
             <p>Integrantes</p>
-            <Link href='/principal/Integrantes'>x</Link>
+            <Link href='/principal/integrantes'>x</Link>
 
             <p>Início da vistoria</p>
-            <Link href='/principal/Vistoria'>x</Link>
+            <Link href='/principal/vistoria'>x</Link>
             
             <p>Identificação do cliente</p>
-            <Link href='/secundaria/Identificacao'>x</Link>
+            <Link href='/secundaria/identificacao'>x</Link>
             
             <p>Escolha do tipo do seguro</p>
-            <Link href='/secundaria/TipoSeguro'></Link>
+            <Link href='/secundaria/tipoSeguro'></Link>
             
             <p>Envio dos arquivos da vistoria</p>
-            <Link href='/secundaria/ArquivosVistoria'>x</Link>
+            <Link href='/secundaria/arquivos-vistoria'>x</Link>
             
             <p>Status da Vistoria</p>
-            <Link href='/secundaria/StatusVistoria'>x</Link>
+            <Link href='/secundaria/status-vistoria'>x</Link>
         </>
     )
 }

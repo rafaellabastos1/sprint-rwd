@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import Page from '../TipoSeguro/page';
+import Page from '../tipo-seguro/page';
 
 export default function Identificacao() {
 
@@ -17,7 +17,7 @@ export default function Identificacao() {
 
             <p>Próxima etapa: </p>
             <ul>
-                <li><Link href='/secundaria/TipoSeguro'>Escolha do tipo do seguro</Link></li>
+                <li><Link href='/secundaria/tipo-seguro'>Escolha do tipo do seguro</Link></li>
             </ul>
         </>
     )
