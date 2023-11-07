@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import Page from '../StatusVistoria/page';
+import Page from '../status-vistoria/page';
 
 export default function ArquivosVistoria() {
 
