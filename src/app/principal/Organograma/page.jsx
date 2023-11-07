@@ -14,22 +14,22 @@ export default function Organograma() {
             <p>Segue abaixo o organograma das páginas:</p>
 
             <p>Integrantes</p>
-            <Link href='/principal/Integrantes'>x</Link>
+            <Link href='/principal/integrantes'>x</Link>
 
             <p>Início da vistoria</p>
-            <Link href='/principal/Vistoria'>x</Link>
+            <Link href='/principal/vistoria'>x</Link>
             
             <p>Identificação do cliente</p>
-            <Link href='/secundaria/Identificacao'>x</Link>
+            <Link href='/secundaria/identificacao'>x</Link>
             
             <p>Escolha do tipo do seguro</p>
-            <Link href='/secundaria/TipoSeguro'></Link>
+            <Link href='/secundaria/tipoSeguro'></Link>
             
             <p>Envio dos arquivos da vistoria</p>
-            <Link href='/secundaria/ArquivosVistoria'>x</Link>
+            <Link href='/secundaria/arquivos-vistoria'>x</Link>
             
             <p>Status da Vistoria</p>
-            <Link href='/secundaria/StatusVistoria'>x</Link>
+            <Link href='/secundaria/status-vistoria'>x</Link>
         </>
     )
 }

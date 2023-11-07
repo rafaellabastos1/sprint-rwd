@@ -63,7 +63,7 @@ export default function ArquivosVistoria() {
             
             <p>Próxima etapa: </p>
             <ul>
-                <li><Link href='/secundaria/StatusVistoria'>Conferir status da vistoria</Link></li>
+                <li><Link href='/secundaria/status-vistoria'>Conferir status da vistoria</Link></li>
             </ul>
         </>
     )

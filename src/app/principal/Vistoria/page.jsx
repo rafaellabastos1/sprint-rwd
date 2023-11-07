@@ -11,7 +11,7 @@ export default function Vistoria() {
 
             <p>Primeira etapa: </p>
             <ul>
-                <li><Link href='/secundaria/Identificacao'>Identificação</Link></li>
+                <li><Link href='/secundaria/identificacao'>Identificação</Link></li>
             </ul>
         </>
     )

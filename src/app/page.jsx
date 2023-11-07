@@ -10,7 +10,7 @@ export default function Home() {
     
       <h2>Faça sua vistoria aqui:</h2>
       <ul>
-        <li><Link href='/principal/Vistoria'>Vistoria</Link></li>
+        <li><Link href='/principal/vistoria'>Vistoria</Link></li>
         <ul>
           <li>Identificação do cliente</li>
           <li>Tipo do Seguro</li>
