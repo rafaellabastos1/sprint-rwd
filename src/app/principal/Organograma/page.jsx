@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import Page from '../Integrantes/page';
+import Page from '../integrantes/page';
 import Page from '../vistoria/page';
 import Page from '../../secundaria/identificacao/page';
 import Page from '../../secundaria/tipo-seguro/page';
