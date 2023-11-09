@@ -1,8 +1,12 @@
+import { useClient} from 'next/client';
+
 export default function StatusVistoria() {
 
     const conferir = () =>{
         alert("Sua vistoria está em análise!")
     }
+
+    useClient();
 
     return (
         <>

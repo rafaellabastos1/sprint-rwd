@@ -21,7 +21,7 @@ export default function ArquivosVistoria() {
                     <li>Foto da bike inteira de lado: </li>
                     <input type="image" id="ftBikeInteira" placeholder="Digite aqui"/>
 
-                    <li>Foto do número: </li>
+                    <li>Foto do número de série: </li>
                     <input type="image" id="ftNumero" placeholder="Digite aqui"/>
 
                     <li>Foto da roda: </li>

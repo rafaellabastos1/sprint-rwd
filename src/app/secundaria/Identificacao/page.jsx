@@ -1,10 +1,13 @@
 import Link from 'next/link'
-import Page from '../tipo-seguro/page';
+import Page from '../TipoSeguro/page';
 
 export default function Identificacao() {
+    const [cpf, setCpf] = useState("");
+    const [aviso, setAviso] = useState("");
+    useClient();
 
-    const enviarCpf = () =>{
-        alert ("Cpf enviado com sucesso!")
+    const enviarCpf = () => {
+        setAviso("CPF enviado com sucesso. Você pode continuar agora!");
     }
 
     return (
@@ -12,12 +15,12 @@ export default function Identificacao() {
             <h1>Identificação</h1>
 
             <p>Informe seu CPF:</p>
-            <input type="text" id="ColetarCpf" placeholder="Digite aqui"/>
+            <input type="text" value={cpf} onChange={(e) => setCpf(e.target.value)} id="ColetarCpf" placeholder="Digite aqui"/>
             <button id="EnviarCPF" onClick={enviarCpf}>Enviar</button> 
 
             <p>Próxima etapa: </p>
             <ul>
-                <li><Link href='/secundaria/tipo-seguro'>Escolha do tipo do seguro</Link></li>
+                <li><Link href='/secundaria/TipoSeguro'>Escolha do tipo do seguro</Link></li>
             </ul>
         </>
     )
