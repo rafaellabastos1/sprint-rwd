@@ -1,7 +1,6 @@
 "use client";
 import { useState } from 'react';
 import Link from 'next/link'
-import Page from '../status-vistoria/page';
 
 export default function ArquivosVistoria() {
     useState

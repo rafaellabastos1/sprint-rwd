@@ -1,7 +1,6 @@
 "use client";
 import { useState } from 'react';
 import Link from 'next/link'
-import Page from '../tipo-seguro/page';
 
 export default function Identificacao() {
     useState

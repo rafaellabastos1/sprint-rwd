@@ -1,10 +1,4 @@
 import Link from 'next/link'
-import Page from '../integrantes/page';
-import Page from '../vistoria/page';
-import Page from '../../secundaria/identificacao/page';
-import Page from '../../secundaria/tipo-seguro/page';
-import Page from '../../secundaria/arquivos-vistoria/page';
-import Page from '../../secundaria/status-vistoria/page';
 
 export default function Organograma() {
     return (
