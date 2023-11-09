@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import Page from './principal/vistoria/page';
 
 export default function Home() {
   return (

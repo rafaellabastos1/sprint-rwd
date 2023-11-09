@@ -1,26 +1,29 @@
+"use client";
+import { useState } from 'react';
 import Link from 'next/link'
-import Page from '../arquivos-vistoria/page';
 
 export default function TipoSeguro() {
+    useState
+
+    const [aviso, setAviso] = useState("");
+
     const tipoSeguro = (seguro) => {
         if (seguro === 0) {
-            alert("Seguro para ciclistas que pedalam na rua selecionado!")
+            setAviso("Seguro para ciclistas que pedalam na rua selecionado!")
         } else if (seguro === 1) {
-            alert("Seguro para ciclistas de maratona selecionado!")
+            setAviso("Seguro para ciclistas de maratona selecionado!")
         } else if (seguro === 2) {
-            alert("Seguro para ciclistas que pedalam em montanhas selecionado!")
+            setAviso("Seguro para ciclistas que pedalam em montanhas selecionado!")
         } else if (seguro === 3) {
-            alert("Seguro para ciclistas que pedalam em pedras e rochas selecionado!")
+            setAviso("Seguro para ciclistas que pedalam em pedras e rochas selecionado!")
         } else if (seguro === 4) {
-            alert("Seguro para ciclistas que pedalam em terra e mato selecionado!")
+            setAviso("Seguro para ciclistas que pedalam em terra e mato selecionado!")
         } else if (seguro === 5) {
-            alert("Seguro para ciclistas por hobbie selecionado!")
+            setAviso("Seguro para ciclistas por hobbie selecionado!")
         } else if (seguro === 6) {
-            alert("Seguro para ciclistas que viajam com a bike selecionado!")
+            setAviso("Seguro para ciclistas que viajam com a bike selecionado!")
         }
     } 
-
-    useClient();
 
     return (
         <>
@@ -51,10 +54,15 @@ export default function TipoSeguro() {
                 <button type="button" onClick={()=>tipoSeguro(6)}>Selecionar</button>
             </ul>
 
-            <p>Próxima etapa: </p>
-            <ul>
-                <li><Link href='/secundaria/arquivos-vistoria'>Envio dos arquivos da vistoria</Link></li>
-            </ul>
+            {aviso && (
+                <div>
+                    <p>{aviso}</p>
+                    <p>Próxima etapa: </p>
+                    <ul>
+                        <li><Link href='/secundaria/arquivos-vistoria'>Envio dos arquivos da vistoria</Link></li>
+                    </ul>
+                </div>
+            )}
         </>
     )
 }
