@@ -6,12 +6,17 @@ export default function ArquivosVistoria() {
     useState
 
     const [aviso, setAviso] = useState("");
+    const [fotoEnviada, setFotoEnviada] = useState(false);
+    const [videoEnviado, setVideoEnviado] = useState(false);
+
 
     const enviarFotos = () =>{
-        setAviso("Fotos enviadas com sucesso!")
+        setAviso("Fotos enviadas com sucesso!");
+        setFotoEnviada(true);
     }
     const enviarVideos = () =>{
-        setAviso("Vídeos enviados com sucesso!")
+        setAviso("Vídeos enviados com sucesso!");
+        setVideoEnviado(true);
     }
 
     return (
@@ -23,31 +28,31 @@ export default function ArquivosVistoria() {
                 <p>Envie fotos dos pontos chaves da sua bike listados abaixo: </p>
                 <ul>
                     <li>Foto da bike inteira de lado: </li>
-                    <input type="image" id="ftBikeInteira" placeholder="Digite aqui"/>
+                    <input type="file" id="ftBikeInteira" placeholder="Digite aqui"/>
 
                     <li>Foto do número de série: </li>
-                    <input type="image" id="ftNumero" placeholder="Digite aqui"/>
+                    <input type="file" id="ftNumero" placeholder="Digite aqui"/>
 
                     <li>Foto da roda: </li>
-                    <input type="image" id="ftRoda" placeholder="Digite aqui"/>
+                    <input type="file" id="ftRoda" placeholder="Digite aqui"/>
 
                     <li>Foto dos freios: </li>
-                    <input type="image" id="ftFreios" placeholder="Digite aqui"/>
+                    <input type="file" id="ftFreios" placeholder="Digite aqui"/>
 
                     <li>Foto do guidão: </li>
-                    <input type="image" id="ftGuidao" placeholder="Digite aqui"/>
+                    <input type="file" id="ftGuidao" placeholder="Digite aqui"/>
 
                     <li>Foto dos pedais: </li>
-                    <input type="image" id="ftPedais" placeholder="Digite aqui"/>
+                    <input type="file" id="ftPedais" placeholder="Digite aqui"/>
 
                     <li>Foto sua com a bike: </li>
-                    <input type="image" id="ftSelfieBike" placeholder="Digite aqui"/>
+                    <input type="file" id="ftSelfieBike" placeholder="Digite aqui"/>
 
                     <li>Foto da bike de frente: </li>
-                    <input type="image" id="ftBikeFrente" placeholder="Digite aqui"/>
+                    <input type="file" id="ftBikeFrente" placeholder="Digite aqui"/>
 
                     <li>Foto dos acessórios (se for visível): </li>
-                    <input type="image" id="ftAcessorios" placeholder="Digite aqui"/>
+                    <input type="file" id="ftAcessorios" placeholder="Digite aqui"/>
                 </ul>
                 <button type="button" id="enviaFotos" onClick={enviarFotos}>Enviar</button>
             </div>
@@ -57,15 +62,15 @@ export default function ArquivosVistoria() {
                 <p>Envie vídeos dos pontos chaves da sua bike listados abaixo: </p>
                 <ul>
                     <li>Vídeo mostrando a bike completa: </li>
-                    <input type="image" id="vdBikeCompleta" placeholder="Digite aqui"/>
+                    <input type="file" id="vdBikeCompleta" placeholder="Digite aqui"/>
               
                     <li>Vídeo mostrando com mais ênfase cada ponto chave que foi tirado foto:  </li>
-                    <input type="image" id="vdPontoChave" placeholder="Digite aqui"/>
+                    <input type="file" id="vdPontoChave" placeholder="Digite aqui"/>
                 </ul>
                 <button type="button" id="enviaVideos" onClick={enviarVideos}>Enviar</button>
             </div>
             
-            {aviso && (
+            {fotoEnviada && videoEnviado &&  (
                 <div>
                     <p>Próxima etapa: </p>
                     <ul>
