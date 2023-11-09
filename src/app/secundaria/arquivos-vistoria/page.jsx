@@ -5,17 +5,18 @@ import Link from 'next/link'
 export default function ArquivosVistoria() {
     useState
 
-    const [aviso, setAviso] = useState("");
+    const [avisoFoto, setAvisoFoto] = useState("");
+    const [avisoVideo, setAvisoVideo] = useState("");
     const [fotoEnviada, setFotoEnviada] = useState(false);
     const [videoEnviado, setVideoEnviado] = useState(false);
 
 
     const enviarFotos = () =>{
-        setAviso("Fotos enviadas com sucesso!");
+        setAvisoFoto("Fotos enviadas com sucesso!");
         setFotoEnviada(true);
     }
     const enviarVideos = () =>{
-        setAviso("Vídeos enviados com sucesso!");
+        setAvisoVideo("Vídeos enviados com sucesso!");
         setVideoEnviado(true);
     }
 
@@ -70,6 +71,14 @@ export default function ArquivosVistoria() {
                 <button type="button" id="enviaVideos" onClick={enviarVideos}>Enviar</button>
             </div>
             
+            {avisoFoto && (
+                <p>{avisoFoto}</p>
+            )}
+
+            {avisoVideo && (
+                <p>{avisoVideo}</p>
+            )}
+
             {fotoEnviada && videoEnviado &&  (
                 <div>
                     <p>Próxima etapa: </p>
