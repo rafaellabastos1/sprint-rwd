@@ -4,8 +4,10 @@ import { useState } from "react";
 export default function StatusVistoria() {
     useState
 
+    const[aviso, setAviso] = useState("");
+
     const conferir = () =>{
-        alert("Sua vistoria está em análise!")
+        setAviso("Sua vistoria está em análise!")
     }
 
     return (
@@ -16,6 +18,10 @@ export default function StatusVistoria() {
 
                 <p>Também é possível acompanhar o status da sua vistoria por aqui:</p>
                 <button type="button" onClick={conferir}>Status da vistoria</button>
+
+                {aviso && (
+                    <p>{aviso}</p>
+                )}
             </div>
         </>
     )
