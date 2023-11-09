@@ -1,12 +1,12 @@
-import { useClient} from 'next/client';
+"use client";
+import { useState } from "react";
 
 export default function StatusVistoria() {
+    useState
 
     const conferir = () =>{
         alert("Sua vistoria está em análise!")
     }
-
-    useClient();
 
     return (
         <>

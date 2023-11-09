@@ -1,7 +1,12 @@
+"use client";
+import { useState } from 'react';
 import Link from 'next/link'
 import Page from '../arquivos-vistoria/page';
 
+
 export default function TipoSeguro() {
+    useState
+
     const tipoSeguro = (seguro) => {
         if (seguro === 0) {
             alert("Seguro para ciclistas que pedalam na rua selecionado!")
@@ -19,8 +24,6 @@ export default function TipoSeguro() {
             alert("Seguro para ciclistas que viajam com a bike selecionado!")
         }
     } 
-
-    useClient();
 
     return (
         <>

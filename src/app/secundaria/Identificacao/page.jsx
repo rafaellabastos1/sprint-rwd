@@ -1,10 +1,13 @@
+"use client";
+import { useState } from 'react';
 import Link from 'next/link'
 import Page from '../tipo-seguro/page';
 
 export default function Identificacao() {
+    useState
+
     const [cpf, setCpf] = useState("");
     const [aviso, setAviso] = useState("");
-    useClient();
 
     const enviarCpf = () => {
         setAviso("CPF enviado com sucesso. Você pode continuar agora!");
