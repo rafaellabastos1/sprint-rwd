@@ -20,10 +20,16 @@ export default function Identificacao() {
             <input type="text" value={cpf} onChange={(e) => setCpf(e.target.value)} id="ColetarCpf" placeholder="Digite aqui"/>
             <button id="EnviarCPF" onClick={enviarCpf}>Enviar</button> 
 
-            <p>Próxima etapa: </p>
-            <ul>
-                <li><Link href='/secundaria/tipo-seguro'>Escolha do tipo do seguro</Link></li>
-            </ul>
+            {aviso && (
+                <div>
+                    <p>{aviso}</p>
+                    <p>Próxima etapa: </p>
+                    <ul>
+                        <li><Link href='/secundaria/tipo-seguro'>Escolha do tipo do seguro</Link></li>
+                    </ul>
+                </div>
+            )}
         </>
     )
 }
+
