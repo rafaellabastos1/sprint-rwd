@@ -1,9 +1,7 @@
 import Link from 'next/link'
-import Page from '../StatusVistoria/page';
-import { useClient } from 'next/client';
+import Page from '../status-vistoria/page';
 
 export default function ArquivosVistoria() {
-    useClient();
 
     const enviarFotos = () =>{
         alert ("Fotos enviadas com sucesso!")
@@ -65,7 +63,7 @@ export default function ArquivosVistoria() {
             
             <p>Próxima etapa: </p>
             <ul>
-                <li><Link href='/secundaria/StatusVistoria'>Conferir status da vistoria</Link></li>
+                <li><Link href='/secundaria/status-vistoria'>Conferir status da vistoria</Link></li>
             </ul>
         </>
     )

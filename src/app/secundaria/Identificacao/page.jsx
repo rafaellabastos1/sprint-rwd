@@ -1,7 +1,5 @@
 import Link from 'next/link'
 import Page from '../TipoSeguro/page';
-import { useState} from 'react';
-import { useClient} from 'next/client';
 
 export default function Identificacao() {
     const [cpf, setCpf] = useState("");
@@ -20,15 +18,10 @@ export default function Identificacao() {
             <input type="text" value={cpf} onChange={(e) => setCpf(e.target.value)} id="ColetarCpf" placeholder="Digite aqui"/>
             <button id="EnviarCPF" onClick={enviarCpf}>Enviar</button> 
 
-            {aviso && (
-                <div>
-                    <p>{aviso}</p>
-                    <p>Próxima etapa: </p>
-                    <ul>
-                        <li><Link href='/secundaria/TipoSeguro'>Escolha do tipo do seguro</Link></li>
-                    </ul>
-                </div>
-            )}  
+            <p>Próxima etapa: </p>
+            <ul>
+                <li><Link href='/secundaria/TipoSeguro'>Escolha do tipo do seguro</Link></li>
+            </ul>
         </>
     )
 }
