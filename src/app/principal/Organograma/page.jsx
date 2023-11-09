@@ -17,7 +17,7 @@ export default function Organograma() {
             <Link href='/secundaria/identificacao'>x</Link>
             
             <p>Escolha do tipo do seguro</p>
-            <Link href='/secundaria/tipoSeguro'></Link>
+            <Link href='/secundaria/tipo-seguro'>x</Link>
             
             <p>Envio dos arquivos da vistoria</p>
             <Link href='/secundaria/arquivos-vistoria'>x</Link>
