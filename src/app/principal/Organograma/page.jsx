@@ -1,10 +1,4 @@
 import Link from 'next/link'
-import Page from '../Integrantes/page';
-import Page from '../vistoria/page';
-import Page from '../../secundaria/identificacao/page';
-import Page from '../../secundaria/tipo-seguro/page';
-import Page from '../../secundaria/arquivos-vistoria/page';
-import Page from '../../secundaria/status-vistoria/page';
 
 export default function Organograma() {
     return (
@@ -23,7 +17,7 @@ export default function Organograma() {
             <Link href='/secundaria/identificacao'>x</Link>
             
             <p>Escolha do tipo do seguro</p>
-            <Link href='/secundaria/tipoSeguro'></Link>
+            <Link href='/secundaria/tipo-seguro'>x</Link>
             
             <p>Envio dos arquivos da vistoria</p>
             <Link href='/secundaria/arquivos-vistoria'>x</Link>

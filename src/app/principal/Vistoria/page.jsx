@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import Page from '../../secundaria/identificacao/page';
 
 export default function Vistoria() {
     return (
