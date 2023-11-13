@@ -27,40 +27,37 @@ export default function TipoSeguro() {
 
     return (
         <>
+            <h1 className='subtitulo'>&nbsp;&nbsp;TechnoBike</h1>
+            
             <h2>Escolha do tipo do seguro</h2>
 
-            <p>Para começarmos, preciso que você escolha o tipo de seguro que mais se adequa às suas necessidades:</p>
-                
-            <ul>
-                <li>Para ciclistas que pedalam na rua</li>
-                <button type="button" onClick={()=>tipoSeguro(0)}>Selecionar</button>
+            <p className='textoSeguro'>Para começarmos, preciso que você escolha o tipo de seguro que mais se adequa às suas necessidades:</p>
 
-                <li>Para ciclistas de maratona</li>
-                <button type="button" onClick={()=>tipoSeguro(1)}>Selecionar</button>
+            <div className='botaoContainer'> 
+                <ul>
+                    <button className='botaoSeguro' type="button" onClick={()=>tipoSeguro(0)}>Para ciclistas que pedalam na rua</button>
 
-                <li>Para ciclistas que pedalam em montanhas</li>
-                <button type="button" onClick={()=>tipoSeguro(2)}>Selecionar</button>
+                    <button className='botaoSeguro' type="button" onClick={()=>tipoSeguro(1)}>Para ciclistas de maratona</button>
 
-                <li>Para ciclistas que pedalam em pedras e rochas</li>
-                <button type="button" onClick={()=>tipoSeguro(3)}>Selecionar</button>
+                    <button className='botaoSeguro' type="button" onClick={()=>tipoSeguro(2)}>Para ciclistas que pedalam em montanhas</button>
 
-                <li>Para ciclistas que pedalam em terra e mato</li>
-                <button type="button" onClick={()=>tipoSeguro(4)}>Selecionar</button>
+                    <button className='botaoSeguro' type="button" onClick={()=>tipoSeguro(3)}>Para ciclistas que pedalam em pedras e rochas</button>
 
-                <li>Para ciclistas por hobbie</li>
-                <button type="button" onClick={()=>tipoSeguro(5)}>Selecionar</button>
+                    <button className='botaoSeguro' type="button" onClick={()=>tipoSeguro(4)}>Para ciclistas que pedalam em terra e mato</button>
 
-                <li>Para ciclistas que viajam com a bike</li>
-                <button type="button" onClick={()=>tipoSeguro(6)}>Selecionar</button>
-            </ul>
+                    <button className='botaoSeguro' type="button" onClick={()=>tipoSeguro(5)}>Para ciclistas por hobbie</button>
+
+                    <button className='botaoSeguro' type="button" onClick={()=>tipoSeguro(6)}>Para ciclistas que viajam com a bike</button>
+                </ul>
+            </div>
 
             {aviso && (
                 <div>
                     <p>{aviso}</p>
-                    <p>Próxima etapa: </p>
-                    <ul>
-                        <li><Link href='/secundaria/arquivos-vistoria'>Envio dos arquivos da vistoria</Link></li>
-                    </ul>
+                    <h3>Próxima etapa: </h3>
+                    <div className='caixaSeguro'>
+                        <Link href='/secundaria/arquivos-vistoria'>&nbsp;&nbsp;Envio dos arquivos da vistoria</Link>
+                    </div>
                 </div>
             )}
         </>
