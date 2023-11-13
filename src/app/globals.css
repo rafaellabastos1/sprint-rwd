@@ -371,4 +371,129 @@
             }
         }
     }
+
+    .textoArquivos {
+        width: 1291px;
+        height: 30px;
+        flex-shrink: 0;
+
+        background-color: #BCCEFD;
+        stroke-width: 1px;
+        stroke: #000;
+
+        color: #000;
+        text-align: left;
+        font-size: 19px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        padding-top: 10px;
+    }
+
+    .enviarFotos {
+        width: 240px;
+        height: 20px;
+        flex-shrink: 0;
+
+        background-color: #b5b9c4;
+        stroke-width: 1px;
+        stroke: #000;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+        color: #000;
+        text-align: left;
+        font-size: 17px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        padding: 8px;
+    }
+
+    .enviarFotosContainer {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .botaoArquivos {
+        margin-top: 10px;
+        padding: 3px;
+    }
+
+    .enviarVideos1 {
+        width: 280px;
+        height: 20px;
+        flex-shrink: 0;
+
+        background-color: #b5b9c4;
+        stroke-width: 1px;
+        stroke: #000;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+        color: #000;
+        text-align: left;
+        font-size: 17px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        padding: 8px;
+    }
+
+    .enviarVideos2 {
+        width: 300px;
+        height: 40px;
+        flex-shrink: 0;
+
+        background-color: #b5b9c4;
+        stroke-width: 1px;
+        stroke: #000;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+        color: #000;
+        text-align: left;
+        font-size: 17px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        padding: 8px;
+    }
+
+    .enviarVideosContainer {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .caixaArquivos {
+        width: 190px;
+        height: 24px;
+        flex-shrink: 0;
+
+        background-color: #BCCEFD;
+        stroke-width: 1px;
+        stroke: #000;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+        & a {
+            width: 83px;
+            height: 11px;
+            flex-shrink: 0;
+
+            color: #000;
+            text-align: center;
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            text-decoration: none;
+
+            &:hover {
+                color: white;
+                background-color:#3d4558;
+                width: 195px;
+                height: 24px;
+                padding: 8px;
+            }
+        }
+    }
 }
