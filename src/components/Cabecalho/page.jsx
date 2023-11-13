@@ -5,10 +5,10 @@ export default function Cabecalho() {
         <>
             <nav className='cabecalho'>
                 <div className='linkCabecalho'>
-                    <Link href="/principal/vistoria">Vistoria | </Link>
+                    <Link href="/principal/vistoria">Vistoria</Link>
                 </div>
                 <div className='linkCabecalho'>
-                    <Link href="/principal/organograma">Organograma | </Link>
+                    <Link href="/principal/organograma">Organograma</Link>
                 </div>
                 <div className='linkCabecalho'>
                     <Link href="/principal/integrantes">Integrantes</Link>
