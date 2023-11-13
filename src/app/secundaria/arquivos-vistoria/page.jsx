@@ -29,7 +29,7 @@ export default function ArquivosVistoria() {
             <div id="fotosVistoria">
                 <p className='textoArquivos'>&nbsp;&nbsp;Envie fotos dos pontos chaves da sua bike listados abaixo: </p>
                 
-                <div className='enviarFotosContainer'>
+                <div>
                     <p className='enviarFotos'>Foto da bike inteira de lado: </p>
                     <input type="file" id="ftBikeInteira" placeholder="Digite aqui"/>
                     
@@ -61,7 +61,7 @@ export default function ArquivosVistoria() {
                 <button className='botaoArquivos' type="button" id="enviaFotos" onClick={enviarFotos}>Enviar</button>
             </div>
             
-            <div id="videosVistoria">
+            <div>
                 <p className='textoArquivos'>&nbsp;&nbsp;Envie vídeos dos pontos chaves da sua bike listados abaixo: </p>
                     
                 <div className='enviarVideosContainer'>
@@ -85,7 +85,7 @@ export default function ArquivosVistoria() {
 
             {fotoEnviada && videoEnviado &&  (
                 <div>
-                    <h3>Próxima etapa: </h3>
+                    <br/><h3>Próxima etapa: </h3>
                     <div className='caixaArquivos'>
                         <Link href='/secundaria/status-vistoria'>&nbsp;&nbsp;Conferir status da vistoria</Link>
                     </div>
