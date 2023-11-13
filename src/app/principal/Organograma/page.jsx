@@ -1,15 +1,20 @@
 import Link from 'next/link';
 import Image from 'next/image';
 
+// Component for Organograma
 export default function Organograma() {
     return (
         <>
+            {/* Title */}
             <h1 className='subtitulo'>&nbsp;&nbsp;TechnoBike</h1>
 
+            {/* Organogram Header */}
             <h2>Organograma</h2>
             
+            {/* Organogram Description */}
             <p className='textoOrganograma'>&nbsp;&nbsp;Segue abaixo o organograma das páginas:</p>
 
+            {/* Page 1: Página Inicial */}
             <div className='listaOrganograma'>
                 <a href="/">
                     <figure>
@@ -23,7 +28,7 @@ export default function Organograma() {
                 </a>
             </div>
 
-            
+            {/* Page 2: Integrantes */}
             <div className='listaOrganograma'>
                 <a href="/principal/integrantes">
                     <figure>
@@ -37,6 +42,7 @@ export default function Organograma() {
                 </a>
             </div>
 
+            {/* Page 3: Vistoria */}
             <div className='listaOrganograma'>
                 <a href="/principal/vistoria">
                     <figure>
@@ -50,6 +56,7 @@ export default function Organograma() {
                 </a>
             </div>
 
+            {/* Page 3.1: Identificação */}
             <div className='listaOrganograma'>
                 <a href="/secundaria/identificacao">
                     <figure>
@@ -63,6 +70,7 @@ export default function Organograma() {
                 </a>
             </div>
             
+            {/* Page 3.2: Tipo do Seguro */}
             <div className='listaOrganograma'>
                 <a href="/secundaria/tipo-seguro">
                     <figure>
@@ -76,6 +84,7 @@ export default function Organograma() {
                 </a>
             </div>
             
+            {/* Page 3.3: Arquivos da Vistoria */}
             <div className='listaOrganograma'>
                 <a href="/secundaria/arquivos-vistoria">
                     <figure>
@@ -89,6 +98,7 @@ export default function Organograma() {
                 </a>
             </div>
             
+            {/* Page 3.4: Status da Vistoria */}
             <div className='listaOrganograma'>
                 <a href="/secundaria/status-vistoria">
                     <figure>
