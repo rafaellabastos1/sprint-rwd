@@ -1,7 +1,9 @@
+import Link from 'next/link';
+
 export default function Rodape() {
     return(
-        <>
-            <h3>TechnoBike</h3>
-        </>
+        <div className='rodape'>
+            <Link href='/'>TechnoBike</Link>
+        </div>
     )
 }
