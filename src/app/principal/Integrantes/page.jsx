@@ -12,7 +12,7 @@ export default function Integrantes() {
             </ul>
 
             <p><b>Link do GitHub: </b>https://github.com/rafaellabastos1/sprint-rwd.git</p>
-            <p><b>Link da Vercel:</b></p>
+            <p><b>Link da Vercel: </b>https://vercel.com/rm552425-fiapcombr/sprint-rwd/A9jHkeom2VGu7Z5HmyqVcHH4CTWv</p>
         </>
     )
 }
