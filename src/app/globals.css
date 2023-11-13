@@ -1,0 +1,169 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .cabecalho {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+        width: 1291px;
+        height: 75px;
+        flex-shrink: 0;
+
+        background-color: #0246D0;
+        stroke-width: 1px;
+        stroke: #000;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+        & a {
+            width: 190px;
+            height: 31px;
+            flex-shrink: 0;
+            margin: 100px;
+
+            text-decoration: none;
+            color: #FFF;
+            font-size: 26px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+
+            &:hover {
+                color: black;
+                background-color: rgb(220, 237, 252);
+                width: 19vw;
+                height: 4vh;
+                padding: 22px;
+            }
+        }
+    }
+
+    .rodape {
+        display: flex;
+        width: 1291px;
+        height: 75px;
+        flex-shrink: 0;
+        background-color: #3664C1;
+
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+
+        & a {
+            font-size: 40px;
+            font-style: normal;
+            color: #FFF;
+            font-weight: 400;
+            line-height: normal;
+            text-decoration: none;
+
+            &:hover{
+                color: black;
+                background-color: rgb(220, 237, 252);
+                padding: 13px;
+            }
+        }
+    }
+}
+
+@layer app {
+    .textoHome {
+        width: 1291px;
+        height: 130px;
+        flex-shrink: 0;
+
+        background-color: #8099D9;
+        stroke-width: 1px;
+        stroke: #000;
+
+        & p {
+            color: #000;
+            text-align: center;
+            font-size: 19px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            padding-left: 5px;
+            padding-right: 5px;
+            padding-top: 5px;
+        }
+    }
+
+    /* .subtitulo {
+
+    } */
+
+    .grupoBike {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 20px;
+    }
+
+    .fotoBike {
+        margin-left: 0;
+        width: 50%;
+    }
+
+    .cardBike {
+        width: 740px;
+        height: 239px;
+        flex-shrink: 0;
+        background-color: #0246D0;
+        stroke-width: 1px;
+        stroke: #000;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+        & a {
+            color: #FFF;
+            font-size: 35px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            text-decoration: none;
+        }
+    }
+
+    .grupoIntegrantes {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .fotoMao {
+        margin-right: 0;
+        width: 50%;
+    }
+
+    .cardIntegrantes {
+        width: 740px;
+        height: 239px;
+        flex-shrink: 0;
+        background-color: #0246D0;
+        stroke-width: 1px;
+        stroke: #000;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+        & a {
+            color: #FFF;
+            font-size: 35px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            text-decoration: none;
+        }
+    }
+}
+
