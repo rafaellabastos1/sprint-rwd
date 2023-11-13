@@ -22,53 +22,57 @@ export default function ArquivosVistoria() {
 
     return (
         <>
-            <h1>Vistoria</h1>
-            <div id="fotosVistoria">
+            <h1 className='subtitulo'>&nbsp;&nbsp;TechnoBike</h1>
+
+            <h2>Vistoria</h2>
             
-                <h2>Envio das fotos</h2>
-                <p>Envie fotos dos pontos chaves da sua bike listados abaixo: </p>
-                <ul>
-                    <li>Foto da bike inteira de lado: </li>
+            <div id="fotosVistoria">
+                <p className='textoArquivos'>&nbsp;&nbsp;Envie fotos dos pontos chaves da sua bike listados abaixo: </p>
+                
+                <div>
+                    <p className='enviarFotos'>Foto da bike inteira de lado: </p>
                     <input type="file" id="ftBikeInteira" placeholder="Digite aqui"/>
-
-                    <li>Foto do número de série: </li>
+                    
+                    <p className='enviarFotos'>Foto do número de série: </p>
                     <input type="file" id="ftNumero" placeholder="Digite aqui"/>
-
-                    <li>Foto da roda: </li>
+                    
+                    <p className='enviarFotos'>Foto da roda: </p>
                     <input type="file" id="ftRoda" placeholder="Digite aqui"/>
-
-                    <li>Foto dos freios: </li>
+                    
+                    <p className='enviarFotos'>Foto dos freios: </p>
                     <input type="file" id="ftFreios" placeholder="Digite aqui"/>
-
-                    <li>Foto do guidão: </li>
+                    
+                    <p className='enviarFotos'>Foto do guidão: </p>
                     <input type="file" id="ftGuidao" placeholder="Digite aqui"/>
-
-                    <li>Foto dos pedais: </li>
+                    
+                    <p className='enviarFotos'>Foto dos pedais: </p>
                     <input type="file" id="ftPedais" placeholder="Digite aqui"/>
-
-                    <li>Foto sua com a bike: </li>
+                    
+                    <p className='enviarFotos'>Foto sua com a bike: </p>
                     <input type="file" id="ftSelfieBike" placeholder="Digite aqui"/>
-
-                    <li>Foto da bike de frente: </li>
+                    
+                    <p className='enviarFotos'>Foto da bike de frente: </p>
                     <input type="file" id="ftBikeFrente" placeholder="Digite aqui"/>
-
-                    <li>Foto dos acessórios (se for visível): </li>
+                    
+                    <p className='enviarFotos'>Foto dos acessórios: </p>
                     <input type="file" id="ftAcessorios" placeholder="Digite aqui"/>
-                </ul>
-                <button type="button" id="enviaFotos" onClick={enviarFotos}>Enviar</button>
+                </div>
+
+                <button className='botaoArquivos' type="button" id="enviaFotos" onClick={enviarFotos}>Enviar</button>
             </div>
             
-            <div id="videosVistoria">
-                <h2>Videos</h2>
-                <p>Envie vídeos dos pontos chaves da sua bike listados abaixo: </p>
-                <ul>
-                    <li>Vídeo mostrando a bike completa: </li>
+            <div>
+                <p className='textoArquivos'>&nbsp;&nbsp;Envie vídeos dos pontos chaves da sua bike listados abaixo: </p>
+                    
+                <div className='enviarVideosContainer'>
+                    <p className='enviarVideos1'>Vídeo mostrando a bike completa: </p>
                     <input type="file" id="vdBikeCompleta" placeholder="Digite aqui"/>
               
-                    <li>Vídeo mostrando com mais ênfase cada ponto chave que foi tirado foto:  </li>
+                    <p className='enviarVideos2'>Vídeo mostrando com mais ênfase cada ponto chave que foi tirado foto:  </p>
                     <input type="file" id="vdPontoChave" placeholder="Digite aqui"/>
-                </ul>
-                <button type="button" id="enviaVideos" onClick={enviarVideos}>Enviar</button>
+                </div>
+                
+                <button className='botaoArquivos' type="button" id="enviaVideos" onClick={enviarVideos}>Enviar</button>
             </div>
             
             {avisoFoto && (
@@ -81,10 +85,10 @@ export default function ArquivosVistoria() {
 
             {fotoEnviada && videoEnviado &&  (
                 <div>
-                    <p>Próxima etapa: </p>
-                    <ul>
-                        <li><Link href='/secundaria/status-vistoria'>Conferir status da vistoria</Link></li>
-                    </ul>
+                    <br/><h3>Próxima etapa: </h3>
+                    <div className='caixaArquivos'>
+                        <Link href='/secundaria/status-vistoria'>&nbsp;&nbsp;Conferir status da vistoria</Link>
+                    </div>
                 </div>
             )}
         </>
