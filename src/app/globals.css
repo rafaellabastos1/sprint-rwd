@@ -91,9 +91,25 @@
         }
     }
 
-    /* .subtitulo {
+    .subtitulo {
+        width: 236px;
+        height: 51px;
+        flex-shrink: 0;
 
-    } */
+        background-color: #0246D0;
+        stroke-width: 1px;
+        stroke: #000;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        color: #FFF;
+
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+
+        display: flex;
+        align-items: center;
+    }
 
     .grupoBike {
         display: flex;
