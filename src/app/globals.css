@@ -1,0 +1,633 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .cabecalho {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+        width: 100%;
+        height: 75px;
+        flex-shrink: 0;
+
+        background-color: #0246D0;
+        stroke-width: 1px;
+        stroke: #000;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+        & a {
+            width: 100%;
+            height: 31px;
+            flex-shrink: 0;
+            margin: 100px;
+
+            text-decoration: none;
+            color: #FFF;
+            font-size: 26px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+
+            &:hover {
+                color: black;
+                background-color: rgb(220, 237, 252);
+                width: 100%;
+                height: 4vh;
+                padding: 22px;
+            }
+        }
+    }
+
+    .rodape {
+        display: flex;
+        width: 100%;
+        height: 75px;
+        flex-shrink: 0;
+        background-color: #3664C1;
+
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+
+        & a {
+            font-size: 40px;
+            font-style: normal;
+            color: #FFF;
+            font-weight: 400;
+            line-height: normal;
+            text-decoration: none;
+
+            &:hover{
+                color: black;
+                background-color: rgb(220, 237, 252);
+                padding: 13px;
+            }
+        }
+    }
+}
+
+@layer app {
+    .textoHome {
+        width: 100%;
+        height: 130px;
+        flex-shrink: 0;
+
+        background-color: #8099D9;
+        stroke-width: 1px;
+        stroke: #000;
+
+        & p {
+            color: #000;
+            text-align: center;
+            font-size: 19px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            padding-left: 5px;
+            padding-right: 5px;
+            padding-top: 5px;
+        }
+    }
+
+    .subtitulo {
+        width: 236px;
+        height: 51px;
+        flex-shrink: 0;
+
+        background-color: #0246D0;
+        stroke-width: 1px;
+        stroke: #000;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        color: #FFF;
+
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+
+        display: flex;
+        align-items: center;
+    }
+
+    .grupoBike {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 20px;
+    }
+
+    .fotoBike {
+        margin-left: 0;
+        width: 40%;
+    }
+
+    .cardBike {
+        width: 60%;
+        height: 239px;
+        flex-shrink: 0;
+        background-color: #0246D0;
+        stroke-width: 1px;
+        stroke: #000;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+        & a {
+            color: #FFF;
+            font-size: 35px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            text-decoration: none;
+        }
+    }
+
+    .grupoIntegrantes {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .fotoMao {
+        margin-right: 0;
+        width: 40%;
+    }
+
+    .cardIntegrantes {
+        width: 60%;
+        height: 239px;
+        flex-shrink: 0;
+        background-color: #0246D0;
+        stroke-width: 1px;
+        stroke: #000;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+        & a {
+            color: #FFF;
+            font-size: 35px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            text-decoration: none;
+        }
+    }
+
+    .textoVistoria {
+        width: 100%;
+        height: 51px;
+        flex-shrink: 0;
+
+        background-color: #BCCEFD;
+        stroke-width: 1px;
+        stroke: #000;
+
+        color: #000;
+        text-align: center;
+        font-size: 19px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        padding-top: 20px;
+    }
+
+    .caixaVistoria {
+        width: 115px;
+        height: 24px;
+        flex-shrink: 0;
+
+        background-color: #BCCEFD;
+        stroke-width: 1px;
+        stroke: #000;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+        & a {
+            width: 83px;
+            height: 11px;
+            flex-shrink: 0;
+
+            color: #000;
+            text-align: center;
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            text-decoration: none;
+
+            &:hover {
+                color: white;
+                background-color:#3d4558;
+                width: 19vw;
+                height: 4vh;
+                padding: 13px;
+            }
+        }
+    }
+
+    .textoSeguro {
+        width: 100%;
+        height: 51px;
+        flex-shrink: 0;
+
+        background-color: #BCCEFD;
+        stroke-width: 1px;
+        stroke: #000;
+
+        color: #000;
+        text-align: center;
+        font-size: 19px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        padding-top: 20px;
+    }
+
+    .botaoSeguro {
+        width: 600px;
+        height: 38px;
+        flex-shrink: 0;
+        margin: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        background-color: #BCCEFD;
+        stroke-width: 1px;
+        stroke: #000;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+        color: #000;
+        text-align: center;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-bottom: 10px;
+
+        &:hover {
+            color: white;
+            background-color:#3d4558;
+            width: 600px;
+            height: 38px;
+            padding: 13px;
+        }
+    }
+
+    .botaoContainer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .caixaSeguro {
+        width: 210px;
+        height: 24px;
+        flex-shrink: 0;
+
+        background-color: #BCCEFD;
+        stroke-width: 1px;
+        stroke: #000;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+        & a {
+            width: 83px;
+            height: 11px;
+            flex-shrink: 0;
+
+            color: #000;
+            text-align: center;
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            text-decoration: none;
+
+            &:hover {
+                color: white;
+                background-color:#3d4558;
+                width: 210px;
+                height: 24px;
+                padding: 8px;
+            }
+        }
+    }
+
+    .textoIdentificacao {
+        width: 100%;
+        height: 30px;
+        flex-shrink: 0;
+
+        background-color: #BCCEFD;
+        stroke-width: 1px;
+        stroke: #000;
+
+        color: #000;
+        text-align: left;
+        font-size: 19px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        padding-top: 10px;
+    }
+
+    .caixaIdentificacao {
+        width: 190px;
+        height: 24px;
+        flex-shrink: 0;
+
+        background-color: #BCCEFD;
+        stroke-width: 1px;
+        stroke: #000;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+        & a {
+            width: 83px;
+            height: 11px;
+            flex-shrink: 0;
+
+            color: #000;
+            text-align: center;
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            text-decoration: none;
+
+            &:hover {
+                color: white;
+                background-color:#3d4558;
+                width: 195px;
+                height: 24px;
+                padding: 8px;
+            }
+        }
+    }
+
+    .textoArquivos {
+        width: 100%;
+        height: 30px;
+        flex-shrink: 0;
+
+        background-color: #BCCEFD;
+        stroke-width: 1px;
+        stroke: #000;
+
+        color: #000;
+        text-align: left;
+        font-size: 19px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        padding-top: 10px;
+    }
+
+    .enviarFotos {
+        width: 240px;
+        height: 20px;
+        flex-shrink: 0;
+
+        background-color: #b5b9c4;
+        stroke-width: 1px;
+        stroke: #000;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+        color: #000;
+        text-align: left;
+        font-size: 17px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        padding: 8px;
+    }
+
+    .botaoArquivos {
+        margin-top: 15px;
+        padding: 10px;
+    }
+
+    .enviarVideos1 {
+        width: 280px;
+        height: 20px;
+        flex-shrink: 0;
+
+        background-color: #b5b9c4;
+        stroke-width: 1px;
+        stroke: #000;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+        color: #000;
+        text-align: left;
+        font-size: 17px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        padding: 8px;
+    }
+
+    .enviarVideos2 {
+        width: 300px;
+        height: 40px;
+        flex-shrink: 0;
+
+        background-color: #b5b9c4;
+        stroke-width: 1px;
+        stroke: #000;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+        color: #000;
+        text-align: left;
+        font-size: 17px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        padding: 8px;
+    }
+
+    .caixaArquivos {
+        width: 190px;
+        height: 24px;
+        flex-shrink: 0;
+
+        background-color: #BCCEFD;
+        stroke-width: 1px;
+        stroke: #000;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+        & a {
+            width: 83px;
+            height: 11px;
+            flex-shrink: 0;
+
+            color: #000;
+            text-align: center;
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            text-decoration: none;
+
+            &:hover {
+                color: white;
+                background-color:#3d4558;
+                width: 195px;
+                height: 24px;
+                padding: 8px;
+            }
+        }
+    }
+
+    .textoStatus {
+        width: 100%;
+        height: 70px;
+        flex-shrink: 0;
+
+        background-color: #BCCEFD;
+        stroke-width: 1px;
+        stroke: #000;
+
+        color: #000;
+        text-align: center;
+        font-size: 19px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        padding-top: 10px;
+    }
+
+    .textoIntegrantes {
+        width: 100%;
+        height: 230px;
+        flex-shrink: 0;
+
+        background-color: #BCCEFD;
+        stroke-width: 1px;
+        stroke: #000;
+
+        color: #000;
+        text-align: center;
+        font-size: 19px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        padding-top: 10px;
+        line-height: 7xpx;
+    }
+
+    .textoOrganograma {
+        width: 100%;
+        height: 40px;
+        flex-shrink: 0;
+
+        background-color: #BCCEFD;
+        stroke-width: 1px;
+        stroke: #000;
+
+        color: #000;
+        text-align: left;
+        font-size: 19px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        padding-top: 10px;
+        line-height: 7xpx;
+    }
+
+    .caixaOrganograma1 {
+        width: 120px;
+        height: 65px;
+        flex-shrink: 0;
+
+        background-color: #8099D9;
+        stroke-width: 1.5px;
+        stroke: #000;
+
+        color: #000;
+        text-align: center;
+        font-family: Sansation;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        padding-top: 8px;
+
+        &:hover {
+            color: white;
+            background-color:#b1c4f1;
+            width: 105px;
+            height: 58px;
+            padding: 8px;
+        }
+    }
+
+    .caixaOrganograma2 {
+        width: 120px;
+        height: 35px;
+        flex-shrink: 0;
+
+        background-color: #8099D9;
+        stroke-width: 1.5px;
+        stroke: #000;
+
+        color: #000;
+        text-align: center;
+        font-family: Sansation;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        padding-top: 8px;
+
+        &:hover {
+            color: white;
+            background-color:#b1c4f1;
+            width: 105px;
+            height: 28px;
+            padding: 8px;
+        }
+    }
+
+    .caixaOrganograma3 {
+        width: 125px;
+        height: 35px;
+        flex-shrink: 0;
+
+        background-color: #8099D9;
+        stroke-width: 1.5px;
+        stroke: #000;
+
+        color: #000;
+        text-align: center;
+        font-family: Sansation;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        padding-top: 8px;
+
+        &:hover {
+            color: white;
+            background-color:#b1c4f1;
+            width: 110px;
+            height: 28px;
+            padding: 8px;
+        }
+    }
+
+    .listaOrganograma {
+        & a {
+            text-decoration: none;
+            color: black;
+        }
+    }
+
+
+}
