@@ -1,10 +1,10 @@
 export default function Integrantes() {
     return (
       <>
-        {/* Título da Página */}
+        {/* Título das Página */}
         <h1 className="subtitulo">&nbsp;&nbsp;TechnoBike</h1>
   
-        {/* Título da Seção de Integrantes */}
+        {/* Título  Seção de Integrantes */}
         <h2>Integrantes</h2>
   
         {/* Lista de Integrantes */}
