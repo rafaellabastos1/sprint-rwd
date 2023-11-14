@@ -4,7 +4,7 @@ export default function Integrantes() {
         {/* Título  Página */}
         <h1 className="subtitulo">&nbsp;&nbsp;TechnoBike</h1>
   
-        {/* Título da Seção de Integrantes */}
+        {/* Título  Seção de Integrantes */}
         <h2>Integrantes</h2>
   
         {/* Lista de Integrantes */}
