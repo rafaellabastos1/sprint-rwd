@@ -2,8 +2,8 @@
 import { useState } from 'react';
 import Link from 'next/link';
 
-// Componente funcional ArquivosVistoria
 export default function ArquivosVistoria() {
+
     // Declara e inicializa variáveis de estado usando o hook useState
     const [avisoFoto, setAvisoFoto] = useState("");
     const [avisoVideo, setAvisoVideo] = useState("");
@@ -22,7 +22,6 @@ export default function ArquivosVistoria() {
         setVideoEnviado(true);
     }
 
-    // Código JSX representando a interface do componente
     return (
         <>
             {/* Cabeçalho */}
@@ -37,11 +36,32 @@ export default function ArquivosVistoria() {
 
                 {/* Campos de entrada de fotos */}
                 <div>
-                    {/* Repita este bloco para cada categoria de foto */}
-                    <p className='enviarFotos'>Foto da bicicleta inteira de lado: </p>
-                    <input type="file" id="ftBikeInteira" placeholder="Digite aqui" />
-
-                    {/* Repita outros campos de entrada de fotos aqui */}
+                    <p className='enviarFotos'>Foto da bike inteira de lado: </p>
+                    <input type="file" id="ftBikeInteira" placeholder="Digite aqui"/>
+                    
+                    <p className='enviarFotos'>Foto do número de série: </p>
+                    <input type="file" id="ftNumero" placeholder="Digite aqui"/>
+                    
+                    <p className='enviarFotos'>Foto da roda: </p>
+                    <input type="file" id="ftRoda" placeholder="Digite aqui"/>
+                    
+                    <p className='enviarFotos'>Foto dos freios: </p>
+                    <input type="file" id="ftFreios" placeholder="Digite aqui"/>
+                    
+                    <p className='enviarFotos'>Foto do guidão: </p>
+                    <input type="file" id="ftGuidao" placeholder="Digite aqui"/>
+                    
+                    <p className='enviarFotos'>Foto dos pedais: </p>
+                    <input type="file" id="ftPedais" placeholder="Digite aqui"/>
+                    
+                    <p className='enviarFotos'>Foto sua com a bike: </p>
+                    <input type="file" id="ftSelfieBike" placeholder="Digite aqui"/>
+                    
+                    <p className='enviarFotos'>Foto da bike de frente: </p>
+                    <input type="file" id="ftBikeFrente" placeholder="Digite aqui"/>
+                    
+                    <p className='enviarFotos'>Foto dos acessórios: </p>
+                    <input type="file" id="ftAcessorios" placeholder="Digite aqui"/>
                 </div>
 
                 {/* Botão para enviar fotos */}
@@ -54,11 +74,11 @@ export default function ArquivosVistoria() {
 
                 {/* Campos de entrada de vídeos */}
                 <div className='enviarVideosContainer'>
-                    {/* Repita este bloco para cada categoria de vídeo */}
-                    <p className='enviarVideos1'>Vídeo mostrando a bicicleta completa: </p>
+                    <p className='enviarVideos1'>Vídeo com a bicicleta completa: </p>
                     <input type="file" id="vdBikeCompleta" placeholder="Digite aqui" />
 
-                    {/* Repita outros campos de entrada de vídeos aqui */}
+                    <p className='enviarVideos2'>Vídeo mostrando com mais ênfase cada ponto chave que foi tirado foto:  </p>
+                    <input type="file" id="vdPontoChave" placeholder="Digite aqui"/>
                 </div>
 
                 {/* Botão para enviar vídeos */}
@@ -79,7 +99,7 @@ export default function ArquivosVistoria() {
                 <div>
                     <br /><h3>Próxima etapa: </h3>
                     <div className='caixaArquivos'>
-                        <Link href='/secundaria/status-vistoria'>&nbsp;&nbsp;Conferir status da vistoria</Link>
+                        <Link href='/secundaria/status-vistoria'>Conferir status da vistoria</Link>
                     </div>
                 </div>
             )}

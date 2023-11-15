@@ -1,8 +1,8 @@
 "use client";
 import { useState } from "react";
 
-// Componente funcional StatusVistoria
 export default function StatusVistoria() {
+
     // Declara e inicializa variáveis de estado usando o hook useState
     const [aviso, setAviso] = useState("");
 
@@ -11,11 +11,10 @@ export default function StatusVistoria() {
         setAviso("Sua vistoria está em análise!");
     }
 
-    // Código JSX representando a interface do componente
     return (
         <>
             {/* Cabeçalho */}
-            <h1 className="subtitulo">&nbsp;&nbsp;TechnoBike</h1>
+            <h1 className="subtitulo">TechnoBike</h1>
 
             {/* Título principal */}
             <h2>Status da Vistoria</h2>
@@ -32,7 +31,7 @@ export default function StatusVistoria() {
 
                 {/* Exibe o aviso se o status da vistoria foi conferido */}
                 {aviso && (
-                    <p>{aviso}</p>
+                        <p>{aviso}</p>
                 )}
             </div>
         </>
