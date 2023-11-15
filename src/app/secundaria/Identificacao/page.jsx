@@ -2,8 +2,8 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 
-// Componente funcional Identificacao
 export default function Identificacao() {
+
     // Declara e inicializa variáveis de estado usando o hook useState
     const [cpf, setCpf] = useState("");
     const [aviso, setAviso] = useState("");
@@ -70,7 +70,7 @@ export default function Identificacao() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         if (cpf.length === 11 || Number.isInteger(cpf)) {
-          // Adicione esta verificação para garantir que cpf seja uma string antes de chamá-la
+
           setClienteNovo((prevClienteNovo) => ({
             ...prevClienteNovo,
             cpf: cpf,
@@ -89,30 +89,24 @@ export default function Identificacao() {
                 console.log("Inserção bem-sucedida!");
                 setAviso3("Sucesso ao enviar!")
             } else {
-                // Se a resposta não for bem-sucedida, exiba uma mensagem de erro
                 console.error("Erro ao inserir: ", response.status, response.statusText);
-                // Você pode adicionar um estado ou mensagem aqui para informar ao usuário sobre o erro
             }
         } catch (error) {
-            // Se ocorrer um erro durante a solicitação, exiba uma mensagem de erro
             console.error("Erro durante a solicitação: ", error.message);
-            // Você pode adicionar um estado ou mensagem aqui para informar ao usuário sobre o erro
         }
         }
       };
 
-
-    // Código JSX representando a interface do componente
     return (
         <>
             {/* Cabeçalho */}
-            <h1 className='subtitulo'>&nbsp;&nbsp;TechnoBike</h1>
+            <h1 className='subtitulo'>TechnoBike</h1>
 
             {/* Título principal */}
             <h2>Identificação</h2>
 
             {/* Campo de entrada para o CPF */}
-            <p className='textoIdentificacao'>&nbsp;&nbsp;Informe seu CPF:</p>
+            <p className='textoIdentificacao'>Informe seu CPF:</p>
             <input type="text" value={cpf} onChange={(e) => setCpf(e.target.value)} id="ColetarCpf" placeholder="Digite aqui"/>
             
             {/* Botão para enviar o CPF */}
@@ -127,7 +121,7 @@ export default function Identificacao() {
                             <p>O cpf: {cliente.cpf} está cadastrado </p>
                             <h3>Próxima etapa: </h3>
                             <div className='caixaIdentificacao'>
-                                <Link href='/secundaria/tipo-seguro'>&nbsp;&nbsp;Escolha do tipo do seguro</Link>
+                                <Link href='/secundaria/tipo-seguro'>Escolha do tipo do seguro</Link>
                             </div>
                         </div>
                     ))}
@@ -145,7 +139,7 @@ export default function Identificacao() {
                 <div>
                     <h3>Cliente cadastrado!</h3>
                     <div className='caixaIdentificacao'>
-                        <Link href='/secundaria/tipo-seguro'>&nbsp;&nbsp;Escolha do tipo do seguro</Link>
+                        <Link href='/secundaria/tipo-seguro'>Escolha do tipo do seguro</Link>
                     </div>
                 </div>
                

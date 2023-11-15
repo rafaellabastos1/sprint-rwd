@@ -1,18 +1,16 @@
-import Link from 'next/link';
 import Image from 'next/image';
 
-// Component for Organograma
 export default function Organograma() {
     return (
         <>
-            {/* Title */}
-            <h1 className='subtitulo'>&nbsp;&nbsp;TechnoBike</h1>
+            {/* Título */}
+            <h1 className='subtitulo'>TechnoBike</h1>
 
-            {/* Organogram Header */}
+            {/* Página */}
             <h2>Organograma</h2>
             
-            {/* Organogram Description */}
-            <p className='textoOrganograma'>&nbsp;&nbsp;Segue abaixo o organograma das páginas:</p>
+            {/* Texto */}
+            <p className='textoOrganograma'>Segue abaixo o organograma das páginas:</p>
 
             {/* Page 1: Página Inicial */}
             <div className='listaOrganograma'>
