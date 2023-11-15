@@ -23,31 +23,25 @@ export default function TipoSeguro() {
     videoPartes: "https://www.youtube.com/watch?v=def98765432",
     analiseVistoria : "Em análise"
 })
-const handleChange = e =>{
+const handleChange = (tipoSeguro) =>{
     setClienteNovo((prevClienteNovo) => ({
                 ...prevClienteNovo,
                 opcSeguro: tipoSeguro.toString(),
               }));
     handleSubmit()
 }
-const handleSubmit = e =>{
+const handleSubmit = () =>{
         
-    try {
-        const response = fetch('http://localhost:8080/technobike/add', {
+    try{
+        fetch('http://localhost:8080/technobike/', {
             method: 'POST',
             headers: {
+                'Access-Control-Allow-Origin' : 'http://localhost:8080/technobike/',
                 'Content-Type': 'application/json',
             },
             body: JSON.stringify(clienteNovo),
         });
 
-        if (response.ok) {
-            // Se a requisição foi bem-sucedida, você pode lidar com a resposta aqui
-            console.log('Requisição bem-sucedida!');
-        } else {
-            // Se a requisição falhou, você pode lidar com o erro aqui
-            console.error('Erro na requisição:', response.statusText);
-        }
     } catch (error) {
         console.error('Erro na requisição:', error.message);
     }
@@ -55,7 +49,7 @@ const handleSubmit = e =>{
 
     // Função para definir o tipo de seguro com base no valor recebido como parâmetro
     const tipoSeguro = (seguro) => {
-        handleChange()
+        handleChange(seguro)
         if (seguro === 0) {
             setAviso("Seguro para ciclistas que pedalam na rua selecionado!");
         } else if (seguro === 1) {
