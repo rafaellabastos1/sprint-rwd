@@ -9,23 +9,23 @@ export default function Identificacao() {
     const [aviso, setAviso] = useState("");
     const [clientes, setClientes] = useState([])
     const [clienteCadastrado, setClienteCadastrado] = useState([])
-    const [clienteNovo, setclienteNovo] = useState({
-        cpf : "",
-        opcSeguro: "1",
-        bikeInteira: "Sim",
-        numSerie: "987654",
-        roda: "redonda",
-        freios: "Disco",
-        guidao: "Curvo",
-        pedais: "Clip",
-        corrente: "Dupla",
-        clienteBike: "Cliente42",
-        bikeFrente: "sim",
-        acessorios: "Farol",
-        videoBike: "https://www.youtube.com/watch?v=abc12345678",
-        videoPartes: "https://www.youtube.com/watch?v=def98765432",
-        analiseVistoria : "Em análise"
-    })
+    // const [clienteNovo, setClienteNovo] = useState({
+    //     cpf : "",
+    //     opcSeguro: "1",
+    //     bikeInteira: "Sim",
+    //     numSerie: "987654",
+    //     roda: "redonda",
+    //     freios: "Disco",
+    //     guidao: "Curvo",
+    //     pedais: "Clip",
+    //     corrente: "Dupla",
+    //     clienteBike: "Cliente42",
+    //     bikeFrente: "sim",
+    //     acessorios: "Farol",
+    //     videoBike: "https://www.youtube.com/watch?v=abc12345678",
+    //     videoPartes: "https://www.youtube.com/watch?v=def98765432",
+    //     analiseVistoria : "Em análise"
+    // })
 
     useEffect(() => {
         fetch(`http://localhost:8080/technobike/`).then((resp) =>{
@@ -33,7 +33,10 @@ export default function Identificacao() {
         }).then((resp) =>{
             setClientes(resp)
             console.log(resp)
-        }).catch((error) => {
+        }).then((data) =>{
+            setClienteNovo(data)
+        })
+        .catch((error) => {
             console.log(error)
         })
     }, [])  
@@ -46,10 +49,31 @@ export default function Identificacao() {
                setClienteCadastrado([buscarCpf]); // Define o cliente cadastrado
                setAviso("CPF encontrado. Você pode continuar agora!");
            } else if(cpf.length === 11 || Number.isInteger(cpf)){
-               setclienteNovo([cpf]); // Limpa os dados do cliente
-               setAviso("CPF não encontrado. Enviando novo cadastro.");
+            //    setClienteNovo((prevClienteNovo) => ({
+            //     ...prevClienteNovo,
+            //     cpf : cpf,
+            //    })); // Limpa os dados do cliente
+            //    setAviso("CPF não encontrado. Enviando novo cadastro.");
+           }else{
+            setAviso("CPF não encontrado. Tente novamente")
            }
     }
+    // const handleSubmit = (e) => {
+    //     e.preventDefault();
+    //     if (cpf.length === 11 || Number.isInteger(cpf)) {
+    //       // Adicione esta verificação para garantir que cpf seja uma string antes de chamá-la
+    //       setClienteNovo((prevClienteNovo) => ({
+    //         ...prevClienteNovo,
+    //         cpf: cpf,
+    //       }));
+    //       setAviso("CPF não encontrado. Enviando novo cadastro.");
+    //       fetch(`http://localhost:8080/technobike/`, {
+    //         method: "post",
+    //         headers: { "Content-Type": "application/json" },
+    //         body: JSON.stringify(clienteNovo),
+    //       });
+    //     }
+    //   };
 
 
     // Código JSX representando a interface do componente
@@ -73,16 +97,14 @@ export default function Identificacao() {
                 <div>
                     <p>{aviso}</p>
                     {clienteCadastrado.map((cliente) => (
-                        <div>
-                            <p key={cliente.cpf}>O status do cliente com o cpf: {cliente.cpf} está cadastrado </p>
+                        <div key={cliente.cpf}>
+                            <p>O status do cliente com o cpf: {cliente.cpf} está cadastrado </p>
                             <h3>Próxima etapa: </h3>
                             <div className='caixaIdentificacao'>
                                 <Link href='/secundaria/tipo-seguro'>&nbsp;&nbsp;Escolha do tipo do seguro</Link>
                              </div>
                         </div>
-  
                     ))}
-                   
                 </div>
             )}
             
