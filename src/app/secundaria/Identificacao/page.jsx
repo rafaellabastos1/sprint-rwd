@@ -11,6 +11,7 @@ export default function Identificacao() {
     const [aviso3, setAviso3] = useState("")
     const [clientes, setClientes] = useState([])
     const [clienteCadastrado, setClienteCadastrado] = useState([])
+    
     const [clienteNovo, setClienteNovo] = useState({
         cpf : "",
         opcSeguro: "1",
@@ -28,7 +29,7 @@ export default function Identificacao() {
         videoPartes: "https://www.youtube.com/watch?v=def98765432",
         analiseVistoria : "Em análise"
     })
-
+    
     useEffect(() => {
         fetch(`http://localhost:8080/technobike/${cpf}`, {
             method: "get"
@@ -42,12 +43,12 @@ export default function Identificacao() {
                 ...prevClienteNovo,
                 cpf: data,
               }));
-            console.log(data)
         })
         .catch((error) => {
             console.log(error)
         })
-    }, [])  
+    }, []);
+      
    
     const handleChange = ()=> {
            // Verifica se o CPF existe nos clientes
@@ -152,4 +153,7 @@ export default function Identificacao() {
             
         </>
     )
+    
 }
+
+
