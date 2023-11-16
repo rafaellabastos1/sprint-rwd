@@ -1,9 +1,9 @@
 # Integrantes
-Douglas Magalhães de Araujo - 552008
-Gustavo Argüello Bertacci - 551304
-Igor Ribeiro Anccilotto - 550415
-Luiz Fillipe Farias - 99519
-Rafaella Monique do Carmo Bastos - 552425
+Douglas Magalhães de Araujo - 552008 
+<br>Gustavo Argüello Bertacci - 551304
+<br>Igor Ribeiro Anccilotto - 550415
+<br>Luiz Fillipe Farias - 99519
+<br>Rafaella Monique do Carmo Bastos - 552425
 
 # Link do Vercel:
 https://vercel.com/rm552425-fiapcombr/sprint-rwd/A9jHkeom2VGu7Z5HmyqVcHH4CTWv
